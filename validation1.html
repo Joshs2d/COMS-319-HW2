@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<meta charset = "utf-8"/>
+<style>
+.errorMessage{color: red;}
+</style>
+<script src="./validation1.js"></script>
+</head>
+
+<body>
+<h1>
+Validation Form
+</h1>
+
+  <form id="contact information" action="" >
+	<fieldset>
+	  <legend>Contact Information: </legend>
+	  
+		<p id="FirstName">
+			<label for="firstName">First Name: </label>
+			<input id="firstName" name="firstName" type="text" "/>
+		</p>
+		 
+		<p id="LastName">
+			<label for="lastName">Last Name: </label>
+			<input id="lastName" name="lastName" type="text"/>
+		</p>
+		 
+		<p id="Gender">
+			<label for="Gender">Gender: </label>
+			<select required id= "selectGender" >
+			<option disabled selected value="Select">Select</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			</select>
+		</p>
+		
+
+		<p id="State">
+			<label for="State">State: </label>
+			<select required id= "selectState">
+			<option disabled selected value="Select">Select</option>
+			<option value="California">California</option>
+			<option value="Florida">Florida</option>
+			<option value="New York">New York</option>
+			<option value="Texas">Texas</option>
+			<option value="Hawaii">Hawaii</option>
+			<option value="Washington">Washington</option>
+			<option value="Colorado">Colorado</option>
+			<option value="Virginia">Virgina</option>
+			<option value="Iowa">Iowa</option>
+			<option value="Arizona">Arizona</option>
+			</select>	
+		</p>
+		<input onCLick="validate1()" type="button" id="continue" name="continue" value="Continue"/>
+
+	</fieldset>
+  </form>
+</body>
+
+</html>
